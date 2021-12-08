@@ -10,8 +10,8 @@ _fullarena () {
 	URL=$(grep -o -P '(http://furiadetitas.net/arena/lastPlayer/\W\w\W\d+\W\w+\W\w+)' $TMP/SRC)
 	( torsocks lynx -dump -cfg=$TMP/$c/cfg "$URL" -useragent="$(shuf -n1 $TMP/$c/.ua)" >$TMP/SRC ) &
 	_timexit 20
-#25x atks
-	for num in `seq 1 +1 5`; do
+#12x atks
+	for num in `seq 1 +1 12`; do
 		URL=$(grep -o -P '(http://furiadetitas.net/arena/lastPlayer/\Wr\W\d+\Wfullmana\Wtrue\Wheal\Wtrue)' $TMP/SRC)
 		( torsocks lynx -dump -cfg=$TMP/$c/cfg "$URL" -useragent="$(shuf -n1 $TMP/$c/.ua)" >$TMP/SRC ) &
 		_timexit 20
