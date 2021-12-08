@@ -50,7 +50,6 @@ curl -q -L -O "https://raw.githubusercontent.com/sharesourcecode/runners/master/
 _sync () {
 	SERVER="https://raw.githubusercontent.com/sharesourcecode/runners/master"
 	cd ~/runners/task
-	cd ~/runners
 	TASKS=( money trade )
 	for s in "${TASKS[@]}"; do
 		num=$[$num+1]
