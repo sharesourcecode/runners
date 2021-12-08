@@ -49,7 +49,7 @@ cd ~/
 curl -q -L -O "https://raw.githubusercontent.com/sharesourcecode/runners/master/installrunners.sh" &> /dev/null
 _sync () {
 	SERVER="https://raw.githubusercontent.com/sharesourcecode/runners/master"
-	cd ~/runners/tasks
+	cd ~/runners/task
 	cd ~/runners
 	TASKS=( money trade )
 	for s in "${TASKS[@]}"; do
