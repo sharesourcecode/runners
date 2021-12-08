@@ -21,7 +21,6 @@ cd $HOME/runners
 . league.sh ; . login.sh ; . timexit.sh ; . tor.sh
 _tor
 _login
-#_clanid
 _arrange
 #tasks
 echo -e "forum/topic/105103\nchat/titans/changeRoom/\narena\nsage\nquest\nmedals\ncollector\nrelic\ncave\naltars\nclancoliseum\nclanfight\nfights/timetable/\nrating/coll/\ncampaign\nshop\nmaneken\nrunes\nsmith/smith/\nitembonus/\nstars/\nrings/\nlab\neffshop/\nuser/\nachievement\nequip\npetshop\nability\ninv/chest/\nmail/\nusergift/\ngiftshop\ntrain\n/" >$TMP/CLOSE
@@ -29,6 +28,8 @@ while true ;
 do
 	for c in "${ACCOUNT[@]}"; do
 		acc=$[$acc+1]
+#clan id
+		_clanid
 		case $(date +%w) in
 			([1-5])
 				_career
