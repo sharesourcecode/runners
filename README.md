@@ -29,7 +29,9 @@ Em seguir Ctrl m
 E Ctrl x
 
 Para evitar erros e demora na execução não use mais que 30 accs.
-Após iniciar a rede tor(aproximadamente 1m) o as accs farão login e executarão as tarefas de 20 em 20 minutos. 
+Após iniciar a rede tor(aproximadamente 1m) as accs farão login e executarão as tarefas de 20 em 20 minutos.
+
+Não use outros programas de VPN ou a rede tor não iniciará.
 
 Pode-se executar também em modo 12x arena para abrir baús de clã:
 
