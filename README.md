@@ -19,13 +19,13 @@ Scripts macros para multi accs no furia.
 
 Ao executar irá se abrir o editor de texto nano, adicione login;senha desta forma separado por ;
 Para adicionar mais contas salte um linha para cada, ficará parecido com isto:
-``
+```bash
 Joao;SenhaDeJoao
 
 Maria;SenhaDeMaria
 
 Luiz Inacio;SenhaDeLuizInacio
-``
+```
 Para salvar e sair do editor nano use a teclas Ctrl o
 Em seguir Ctrl m
 E Ctrl x
