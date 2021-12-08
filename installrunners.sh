@@ -43,24 +43,41 @@ ls "$LS" | grep -q procps || "$APT" install procps -y &> /dev/null
 unset LS APT
 # /runners dir
 mkdir -p ~/runners
-mkdir -p ~/runners/tasks
+mkdir -p ~/runners/task
 mkdir -p ~/.tmp/runners
 cd ~/
 curl -q -L -O "https://raw.githubusercontent.com/sharesourcecode/runners/master/installrunners.sh" &> /dev/null
 _sync () {
-	cd ~/runners
 	SERVER="https://raw.githubusercontent.com/sharesourcecode/runners/master"
+	cd ~/runners/tasks
+	cd ~/runners
+	TASKS=( money trade )
+	for s in "${TASKS[@]}"; do
+		num=$[$num+1]
+		echo -e " Checking $num/${#TASKS[*]} $s"
+		curl -L -s $SERVER/$s 2> /dev/null | cmp -s --bytes $((100 * 1024 * 1024)) $s || {
+			[[ -e ~/runners/task/$s ]] && {
+				rm "$s" &> /dev/null
+				echo -e "\e[01;32m\e[01;07m Updating task $s\e[00m"
+			} || {
+				echo -e "\e[00;33m\e[01;07m Downloading task $s\e[00m"
+			}
+			curl -q $SERVER/$s -O -L &> /dev/null
+		}
+	done
+	unset TASKS s num
 # /sync array scripts
-	SCRIPTS=(arena.sh arrange.sh career.sh clandungeon.sh clanid.sh close.sh fplay.sh fullarena.sh league.sh login.sh play.sh run.sh timexit.sh tor.sh )
+	cd ~/runners
+	SCRIPTS=( arena.sh arrange.sh career.sh clandungeon.sh clanid.sh close.sh fplay.sh fullarena.sh league.sh login.sh play.sh run.sh timexit.sh tor.sh )
 	for s in "${SCRIPTS[@]}"; do
 		num=$[$num+1]
 		echo -e " Checking $num/${#SCRIPTS[*]} $s"
 		curl -L -s $SERVER/$s 2> /dev/null | cmp -s --bytes $((100 * 1024 * 1024)) $s || {
 			[[ -e ~/runners/$s ]] && {
 				rm "$s" &> /dev/null
-				echo -e "\e[01;32m\e[01;07m Updating $s\e[00m"
+				echo -e "\e[01;32m\e[01;07m Updating script $s\e[00m"
 			} || {
-				echo -e "\e[00;33m\e[01;07m Downloading $s\e[00m"
+				echo -e "\e[00;33m\e[01;07m Downloading script $s\e[00m"
 			}
 			curl -q $SERVER/$s -O -L &> /dev/null
 		}
