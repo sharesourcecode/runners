@@ -35,7 +35,7 @@ Após iniciar a rede tor(aproximadamente 1m) as accs farão login e executarão 
 
 Não use outros programas de VPN ou a rede tor não iniciará.
 
-Pode-se executar também em modo 12x arena para abrir baús de clã:
+Pode-se executar também em modo 12x arena para abrir baús de clã, neste modo só faz login, arena e sai:
 
 ```bash runners/fplay.sh```
 
