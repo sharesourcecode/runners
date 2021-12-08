@@ -53,7 +53,7 @@ _sync () {
 	TASKS=( money trade )
 	for s in "${TASKS[@]}"; do
 		num=$[$num+1]
-		echo -e " Checking $num/${#TASKS[*]} $s"
+		echo -e " Checking task $num/${#TASKS[*]} $s"
 		curl -L -s $SERVER/$s 2> /dev/null | cmp -s --bytes $((100 * 1024 * 1024)) $s || {
 			[[ -e ~/runners/task/$s ]] && {
 				rm "$s" &> /dev/null
@@ -70,7 +70,7 @@ _sync () {
 	SCRIPTS=( arena.sh arrange.sh career.sh clandungeon.sh clanid.sh close.sh fplay.sh fullarena.sh league.sh login.sh play.sh run.sh timexit.sh tor.sh )
 	for s in "${SCRIPTS[@]}"; do
 		num=$[$num+1]
-		echo -e " Checking $num/${#SCRIPTS[*]} $s"
+		echo -e " Checking script $num/${#SCRIPTS[*]} $s"
 		curl -L -s $SERVER/$s 2> /dev/null | cmp -s --bytes $((100 * 1024 * 1024)) $s || {
 			[[ -e ~/runners/$s ]] && {
 				rm "$s" &> /dev/null
