@@ -13,7 +13,7 @@ cd $HOME/runners
 . league.sh ; . login.sh ; . timexit.sh ; . tor.sh
 _tor
 _login
-_clanid
+#_clanid
 _arrange
 #tasks
 while true ;
