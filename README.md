@@ -17,14 +17,19 @@ Scripts macros para multi accs no furia.
 
 ```bash runners/play.sh```
 
-Irá se abrir o editor de texto nano, adicione login;senha desta forma separado por ;
+Ao executar irá se abrir o editor de texto nano, adicione login;senha desta forma separado por ;
 Para adicionar mais contas salte um linha para cada, ficará parecido com isto:
-```Joao;SenhaDeJoao
+``Joao;SenhaDeJoao
 Maria;SenhaDeMaria
-Luiz Inacio;SenhaDeLuizInacio```
+Luiz Inacio;SenhaDeLuizInacio``
+Para salvar e sair do editor nano use a teclas Ctrl o
+Em seguir Ctrl m
+E Ctrl x
 
-Executar em modo 12x arena:
+Após iniciar a rede tor(aproximadamente 1m) o as accs farão login e executarão as tarefas de 20 em 20 minutos. 
 
-```bash twm/play.sh```
+Pode-se executar também em modo 12x arena para abrir baús de clã:
+
+```bash runners/fplay.sh```
 
 `Para interroper (CTRL c) ou force a parada do app Termux`
