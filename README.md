@@ -5,15 +5,15 @@ Scripts macros para multi accs no furia.
 
 ```apt install curl -y```
 
->2 - Copie e cole este comando para baixar o instalador do twm(O link faz parte do comando):
+>2 - Copie e cole este comando para baixar o instalador do Runners(O link faz parte do comando):
 
 ```curl https://github.com/sharesourcecode/runners/raw/master/installrunners.sh -O -L```
 
->3 - Copie e cole este comando para instalar o twm:
+>3 - Copie e cole este comando para instalar o Runners:
 
 ```bash installrunners.sh```
 
->4 - Para executar o twm:
+>4 - Para executar o Runners:
 
 ```bash runners/play.sh```
 
