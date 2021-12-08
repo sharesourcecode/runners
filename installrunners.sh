@@ -45,7 +45,7 @@ unset LS APT
 mkdir -p ~/runners
 mkdir -p ~/.tmp/runners
 cd ~/
-curl -q -L -O "https://raw.githubusercontent.com/sharesourcecode/runners/master/runnersinstall.sh" &> /dev/null
+curl -q -L -O "https://raw.githubusercontent.com/sharesourcecode/runners/master/installrunners.sh" &> /dev/null
 _sync () {
 	cd ~/runners
 	SERVER="https://raw.githubusercontent.com/sharesourcecode/runners/master"
