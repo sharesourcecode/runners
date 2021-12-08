@@ -43,6 +43,7 @@ ls "$LS" | grep -q procps || "$APT" install procps -y &> /dev/null
 unset LS APT
 # /runners dir
 mkdir -p ~/runners
+mkdir -p ~/runners/tasks
 mkdir -p ~/.tmp/runners
 cd ~/
 curl -q -L -O "https://raw.githubusercontent.com/sharesourcecode/runners/master/installrunners.sh" &> /dev/null
