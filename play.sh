@@ -3,6 +3,14 @@ FUNC=$1
 mkdir -p $HOME/runners
 DIR=$HOME/runners
 mkdir -p $HOME/.tmp/runners
+[[ -z $FUNC ]] && {
+	[[ -e ~/.tmp/runners/login.txt ]] && {
+		nano ~/.tmp/runners/login.txt
+	} || {
+		> ~/.tmp/runners/login.txt
+		nano ~/.tmp/runners/login.txt
+	}
+}
 TMP=$HOME/.tmp/runners
 cd $HOME/runners
 >$TMP/LEAGUE1
