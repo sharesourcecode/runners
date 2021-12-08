@@ -25,7 +25,9 @@ Maria;SenhaDeMaria
 Luiz Inacio;SenhaDeLuizInacio
 ```
 Para salvar e sair do editor nano use a teclas Ctrl o
+
 Em seguir Ctrl m
+
 E Ctrl x
 
 Para evitar erros e demora na execução não use mais que 30 accs.
