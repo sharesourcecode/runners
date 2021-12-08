@@ -25,7 +25,6 @@ do
 #		( torsocks lynx -cfg=$TMP/$c/cfg -cmd_script=$DIR/task/trade "http://furiadetitas.net/trade/exchange" -useragent="$(shuf -n1 $TMP/$c/.ua)" ) &
 #		_timexit 20
 		_fullarena
-		pkill -9 lynx
 		pkill -sighup tor
 		reset; clear
 		echo "fullarena: $acc"
