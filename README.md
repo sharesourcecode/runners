@@ -1,5 +1,5 @@
 # Runners
-Scripts macros para multi accs no furia.
+Scripts macros para multi accs no furia, disponível apenas para o servidor Pt/Br.
 
 >1 - Abra o app Termux(https://f-droid.org/repo/com.termux_117.apk) no Android e digite ou cole:
 
