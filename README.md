@@ -21,9 +21,7 @@ Ao executar irá se abrir o editor de texto nano, adicione login;senha desta for
 Para adicionar mais contas salte um linha para cada, ficará parecido com isto:
 ```bash
 Joao;SenhaDeJoao
-
 Maria;SenhaDeMaria
-
 Luiz Inacio;SenhaDeLuizInacio
 ```
 Para salvar e sair do editor nano use a teclas Ctrl o
