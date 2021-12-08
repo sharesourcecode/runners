@@ -18,6 +18,7 @@ Scripts macros para multi accs no furia.
 ```bash runners/play.sh```
 
 Ao executar irá se abrir o editor de texto nano, adicione login;senha como descrito abaixo, separado por ;
+
 Para adicionar mais contas salte um linha para cada, ficará parecido com isto:
 ```bash
 Joao;SenhaDeJoao
