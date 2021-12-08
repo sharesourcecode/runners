@@ -39,8 +39,6 @@ _login () {
 #run logins
 		( torsocks lynx -cfg=$TMP/$archive/cfg -cmd_script=$TMP/$archive/$archive "http://furiadetitas.net/?sign_in=1" -useragent="$(shuf -n1 $TMP/$archive/.ua)" ) &
 		_timexit 20
-#take clan id
-		_clanid
 #change tor IP
 		pkill -sighup tor
 #loop conf
