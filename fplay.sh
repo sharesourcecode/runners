@@ -13,13 +13,14 @@ cd $HOME/runners
 . league.sh ; . login.sh ; . timexit.sh ; . tor.sh
 _tor
 _login
-#_clanid
 _arrange
 #tasks
 while true ;
 do
 	for c in "${ACCOUNT[@]}"; do
 		acc=$[$acc+1]
+#clanid
+		_clanid
 #trade
 #		( torsocks lynx -cfg=$TMP/$c/cfg -cmd_script=$DIR/task/trade "http://furiadetitas.net/trade/exchange" -useragent="$(shuf -n1 $TMP/$c/.ua)" ) &
 #		_timexit 20
