@@ -33,7 +33,7 @@ _league () {
 	_timexit 20
 	grep -q 'Lutas disponiveis: 5' $TMP/SRC && {
 #quest take help
-		( torsocks lynx -source -cfg=$TMP/$c/cfg "http://furiadetitas.net/clan/1271/quest/" -useragent="$(shuf -n1 $TMP/$c/.ua)" >$TMP/SRC ) &
+		( torsocks lynx -source -cfg=$TMP/$c/cfg "http://furiadetitas.net/clan/$CLD/quest/" -useragent="$(shuf -n1 $TMP/$c/.ua)" >$TMP/SRC ) &
 		_timexit 20
 		grep -q '/quest/take/1' $TMP/SRC
 		take1=$?
@@ -48,13 +48,13 @@ _league () {
 		grep -q -o -P '(\W\W/span\W \Wspan class\W\Wgreen(.*)/clan/\d{1,4}/quest/\w{3,10}/2)' $TMP/SRC
 		closeTWO=$?
 		[[ $closeONE != 0 && $take1 = 0 ]] && {
-			( torsocks lynx -dump -cfg=$TMP/$c/cfg "http://furiadetitas.net/clan/1271/quest/take/1" -useragent="$(shuf -n1 $TMP/$c/.ua)" >$TMP/SRC ) &
+			( torsocks lynx -dump -cfg=$TMP/$c/cfg "http://furiadetitas.net/clan/$CLD/quest/take/1" -useragent="$(shuf -n1 $TMP/$c/.ua)" >$TMP/SRC ) &
 			_timexit 10
 			echo "$c" >$TMP/LEAGUE1
 		}
 		[[ $closeTWO != 0 && $help2 = 0 ]] && {
 			[[ $close = 0 ]] && _close
-			( torsocks lynx -dump -cfg=$TMP/$c/cfg "http://furiadetitas.net/clan/1271/quest/help/2" -useragent="$(shuf -n1 $TMP/$c/.ua)" >$TMP/SRC ) &
+			( torsocks lynx -dump -cfg=$TMP/$c/cfg "http://furiadetitas.net/clan/$CLD/quest/help/2" -useragent="$(shuf -n1 $TMP/$c/.ua)" >$TMP/SRC ) &
 			_timexit 10
 		}
 		[[ $closeONE != 0 && $take1 = 0 || $closeTWO != 0 && $help2 = 0 ]] && {
@@ -62,31 +62,31 @@ _league () {
 		}
 # help 1		
 		[[ $closeTWO != 0 && $take2 = 0 ]] && {
-			( torsocks lynx -dump -cfg=$TMP/$c/cfg "http://furiadetitas.net/clan/1271/quest/take/2" -useragent="$(shuf -n1 $TMP/$c/.ua)" >$TMP/SRC ) &
+			( torsocks lynx -dump -cfg=$TMP/$c/cfg "http://furiadetitas.net/clan/$CLD/quest/take/2" -useragent="$(shuf -n1 $TMP/$c/.ua)" >$TMP/SRC ) &
 			_timexit 10
 			echo "$c" >$TMP/LEAGUE2
 		}
 		[[ $closeONE != 0 && $help1 = 0 ]] && {
 			[[ $closeONE = 0 ]] && _close
-			( torsocks lynx -dump -cfg=$TMP/$c/cfg "http://furiadetitas.net/clan/1271/quest/help/1" -useragent="$(shuf -n1 $TMP/$c/.ua)" >$TMP/SRC ) &
+			( torsocks lynx -dump -cfg=$TMP/$c/cfg "http://furiadetitas.net/clan/$CLD/quest/help/1" -useragent="$(shuf -n1 $TMP/$c/.ua)" >$TMP/SRC ) &
 			_timexit 10
 		}
 		[[ $closeTWO != 0 && $take2 = 0 || $closeONE != 0 && $help1 = 0 ]] && {
 			_lstart
 		}
 #quest end deleteHelp
-		( torsocks lynx -dump -cfg=$TMP/$c/cfg "http://furiadetitas.net/clan/1271/quest/" -useragent="$(shuf -n1 $TMP/$c/.ua)" >$TMP/SRC ) &
+		( torsocks lynx -dump -cfg=$TMP/$c/cfg "http://furiadetitas.net/clan/$CLD/quest/" -useragent="$(shuf -n1 $TMP/$c/.ua)" >$TMP/SRC ) &
 		_timexit 20
 		grep -q '/quest/deleteHelp/1' $TMP/SRC
 		deleteHelp1=$?
 		grep -q '/quest/end/2' $TMP/SRC
 		end2=$?
 		[[ $deleteHelp1 = 0 ]] && {
-			( torsocks lynx -dump -cfg=$TMP/$c/cfg "http://furiadetitas.net/clan/1271/quest/deleteHelp/1" -useragent="$(shuf -n1 $TMP/$c/.ua)" >$TMP/SRC ) &
+			( torsocks lynx -dump -cfg=$TMP/$c/cfg "http://furiadetitas.net/clan/$CLD/quest/deleteHelp/1" -useragent="$(shuf -n1 $TMP/$c/.ua)" >$TMP/SRC ) &
 			_timexit 10
 		}
 		[[ $end2 = 0 ]] && {
-			( torsocks lynx -dump -cfg=$TMP/$c/cfg "http://furiadetitas.net/clan/1271/quest/end/2" -useragent="$(shuf -n1 $TMP/$c/.ua)" >$TMP/SRC ) &
+			( torsocks lynx -dump -cfg=$TMP/$c/cfg "http://furiadetitas.net/clan/$CLD/quest/end/2" -useragent="$(shuf -n1 $TMP/$c/.ua)" >$TMP/SRC ) &
 			_timexit 10
 		}
 		grep -q '/quest/deleteHelp/2' $TMP/SRC
@@ -94,11 +94,11 @@ _league () {
 		grep -q '/quest/end/1' $TMP/SRC
 		end1=$?
 		[[ $deleteHelp2 = 0 ]] && {
-			( torsocks lynx -dump -cfg=$TMP/$c/cfg "http://furiadetitas.net/clan/1271/quest/deleteHelp/2" -useragent="$(shuf -n1 $TMP/$c/.ua)" >$TMP/SRC ) &
+			( torsocks lynx -dump -cfg=$TMP/$c/cfg "http://furiadetitas.net/clan/$CLD/quest/deleteHelp/2" -useragent="$(shuf -n1 $TMP/$c/.ua)" >$TMP/SRC ) &
 			_timexit 10
 		}
 		[[ $end1 = 0 ]] && {
-			( torsocks lynx -dump -cfg=$TMP/$c/cfg "http://furiadetitas.net/clan/1271/quest/end/1" -useragent="$(shuf -n1 $TMP/$c/.ua)" >$TMP/SRC ) &
+			( torsocks lynx -dump -cfg=$TMP/$c/cfg "http://furiadetitas.net/clan/$CLD/quest/end/1" -useragent="$(shuf -n1 $TMP/$c/.ua)" >$TMP/SRC ) &
 			_timexit 10
 		}
 	}

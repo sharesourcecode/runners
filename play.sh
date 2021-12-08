@@ -9,10 +9,11 @@ cd $HOME/runners
 >$TMP/LEAGUE2
 >$TMP/CAREER
 #sources
-. fullarena.sh ; . arena.sh ; . arrange.sh ; . career.sh ; . clandungeon.sh ; . close.sh
+. clanid.sh ; . fullarena.sh ; . arena.sh ; . arrange.sh ; . career.sh ; . clandungeon.sh ; . close.sh
 . league.sh ; . login.sh ; . timexit.sh ; . tor.sh
 _tor
 _login
+_clanid
 _arrange
 #tasks
 echo -e "forum/topic/105103\nchat/titans/changeRoom/\narena\nsage\nquest\nmedals\ncollector\nrelic\ncave\naltars\nclancoliseum\nclanfight\nfights/timetable/\nrating/coll/\ncampaign\nshop\nmaneken\nrunes\nsmith/smith/\nitembonus/\nstars/\nrings/\nlab\neffshop/\nuser/\nachievement\nequip\npetshop\nability\ninv/chest/\nmail/\nusergift/\ngiftshop\ntrain\n/" >$TMP/CLOSE
@@ -34,7 +35,7 @@ do
 				( torsocks lynx -cfg=$TMP/$c/cfg -cmd_script=$DIR/task/trade "http://furiadetitas.net/trade/exchange" -useragent="$(shuf -n1 $TMP/$c/.ua)" ) &
 				_timexit 20
 #clan money
-				( torsocks lynx -cfg=$TMP/$c/cfg -cmd_script=$DIR/task/money "http://furiadetitas.net/clan/1271/money" -useragent="$(shuf -n1 $TMP/$c/.ua)" ) &
+				( torsocks lynx -cfg=$TMP/$c/cfg -cmd_script=$DIR/task/money "http://furiadetitas.net/clan/$CLD/money" -useragent="$(shuf -n1 $TMP/$c/.ua)" ) &
 				_timexit 20 ;;
 		esac
 		close=1
