@@ -1,5 +1,5 @@
-# runners
-Script macros para multi accs no furia.
+# Runners
+Scripts macros para multi accs no furia.
 
 >1 - Abra o app Termux(https://f-droid.org/repo/com.termux_117.apk) no Android e digite ou cole:
 
