@@ -12,7 +12,7 @@ cd $HOME/runners
 . clanid.sh ; . fullarena.sh ; . arena.sh ; . arrange.sh ; . career.sh ; . clandungeon.sh ; . close.sh
 . league.sh ; . login.sh ; . timexit.sh ; . tor.sh
 _tor
-#_login
+_login
 _clanid
 _arrange
 #tasks
