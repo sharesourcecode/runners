@@ -44,5 +44,7 @@ bash runners/fplay.sh
 
 * Para interroper `CTRL c` ou force a parada do app Termux
 
-* Desinstalar scripts: `rm -rf $HOME/runners`
-* Remover dados: `rm -rf $HOME/.tmp/runners`
+* Desinstalar scripts:
+`rm -rf $HOME/runners`
+* Remover dados:
+`rm -rf $HOME/.tmp/runners`
