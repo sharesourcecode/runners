@@ -16,8 +16,8 @@ _login () {
 		mkdir -p $TMP/$archive
 #cmd log
 		echo 'key Down Arrow' >$TMP/$archive/$archive
-		echo 'key Down Arrow' >$TMP/$archive/$archive
-		echo 'key Down Arrow' >$TMP/$archive/$archive
+		echo 'key Down Arrow' >>$TMP/$archive/$archive
+		echo 'key Down Arrow' >>$TMP/$archive/$archive
 		for i in `echo $archive|fold -w1`
 		do
 			echo 'key '$i >> $TMP/$archive/$archive
