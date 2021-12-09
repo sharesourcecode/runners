@@ -48,3 +48,5 @@ bash runners/fplay.sh
 `rm -rf $HOME/runners`
 * Remover dados:
 `rm -rf $HOME/.tmp/runners`
+*Remover atalho do Termux boot:
+`rm -rf $HOME/.termux/boot/runners.sh`
