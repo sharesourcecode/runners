@@ -42,4 +42,4 @@ Pode-se executar também em modo 12x arena para abrir baús de clã, neste modo 
 bash runners/fplay.sh
 ```
 
-`Para interroper (CTRL c) ou force a parada do app Termux`
+* Para interroper `CTRL c` ou force a parada do app Termux
