@@ -26,7 +26,7 @@ Joao;SenhaDeJoao
 Maria;SenhaDeMaria
 Luiz Inacio;SenhaDeLuizInacio
 ```
-Para salvar e sair do editor nano use a teclas `Ctrl o`
+Para salvar e sair do editor nano use as combinações de teclas `Ctrl o`
 
 Em seguir `Ctrl m`
 
