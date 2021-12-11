@@ -63,6 +63,7 @@ _sync () {
 			}
 			curl -q $SERVER/$s -O -L &> /dev/null
 		}
+		sleep 1s
 	done
 	unset TASKS s num
 # /sync array scripts
@@ -80,6 +81,7 @@ _sync () {
 			}
 			curl -q $SERVER/$s -O -L &> /dev/null
 		}
+		sleep 1s
 	done
 	unset SCRIPTS s num SERVER
 # /DOS to Unix
