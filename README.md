@@ -31,7 +31,7 @@ Para salvar e sair do editor nano use as combinações de teclas `Ctrl o`
 
 Em seguida `Ctrl m`
 
-E finalmente `Ctrl x`
+E finalmente sair com `Ctrl x`
 
 Para evitar erros e demora na execução não use mais que 30 accs.
 Após iniciar a rede tor(aproximadamente 1m) as accs farão login e executarão as tarefas de 20 em 20 minutos.
