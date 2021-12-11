@@ -2,6 +2,7 @@ _tor () {
 	echo "Starting tor..."
 	tor &
 	echo "Wait 1m..."
-	read -t 60
+	sleep 10s
+	read -t 50
 	reset; clear
 }
