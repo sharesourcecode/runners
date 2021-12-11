@@ -62,5 +62,6 @@ _arena () {
 		URL=$(sed -n '1p' <<<$(grep -o -P '(http://furiadetitas.net/fault/attack/\Wr\W\d+)' $TMP/SRC))
 		(torsocks lynx -dump -cfg=$TMP/$c/cfg "$URL" -useragent="$(shuf -n1 $TMP/$c/.ua)" >$TMP/SRC ) &
 		_timexit 10
+		sleep 1s
 	done
 }
