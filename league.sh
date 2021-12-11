@@ -27,6 +27,7 @@ _league () {
 					}
 				}
 			}
+			sleep 1s
 		done
 	}
 	( torsocks lynx -dump -cfg=$TMP/$c/cfg "http://furiadetitas.net/league" -useragent="$(shuf -n1 $TMP/$c/.ua)" >$TMP/SRC ) &
