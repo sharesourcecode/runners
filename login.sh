@@ -49,5 +49,6 @@ _login () {
 	pkill -9 lynx
 	reset; clear
 	echo "Login: $Lnl"
+	sleep 1s
 	done
 }
