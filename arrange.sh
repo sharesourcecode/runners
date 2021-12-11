@@ -9,6 +9,7 @@ _arrange () {
 			ACCOUNT+=("$usernames")
 			Lnl=$[$Lnl-1]
 		}
+		sleep 1s
 	done
 	reset; clear
 }
