@@ -27,11 +27,11 @@ Joao;SenhaDeJoao
 Maria;SenhaDeMaria
 Luiz Inacio;SenhaDeLuizInacio
 ```
-Para salvar e sair do editor nano use as combinações de teclas `Ctrl o`
+Para salvar modificações feitas com o editor nano use as combinações de teclas `Ctrl o`
 
 Em seguida `Ctrl m`
 
-E finalmente sair com `Ctrl x`
+E finalmente `Ctrl x` para sair do editor. 
 
 Para evitar erros e demora na execução não use mais que 30 accs.
 Após iniciar a rede tor(aproximadamente 1m) as accs farão login e executarão as tarefas de 20 em 20 minutos.
