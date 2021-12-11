@@ -5,5 +5,6 @@ _clandungeon () {
 		echo "$(sed -n '1p' <<<$(grep -o -P '(http://furiadetitas.net/clandungeon/attack/\Wr\W\d+)' $TMP/SRC))" >$TMP/URL
 		( torsocks lynx -dump -cfg=$TMP/$c/cfg "$(cat $TMP/URL)" -useragent="$(shuf -n1 $TMP/$c/.ua)" >$TMP/SRC) &
 		_timexit 10
+		sleep 1s
 	done
 }
