@@ -71,10 +71,12 @@ do
 		}
 #		torsocks lynx -dump -cfg=$TMP/$c/cfg -cmd_script=$DIR/task/arena "http://furiadetitas.net/arena" -useragent="$(shuf -n1 $TMP/$c/.ua)"
 		pkill -sighup tor
+		sleep 1s
 	done
 #	_close
 	acc=0
 	sleep 20m
 	pkill -9 lynx
 	pkill -sighup tor
+	sleep 1s
 done
