@@ -22,9 +22,10 @@ do
 #clanid
 		_clanid
 #trade
-#		( torsocks lynx -cfg=$TMP/$c/cfg -cmd_script=$DIR/task/trade "http://furiadetitas.net/trade/exchange" -useragent="$(shuf -n1 $TMP/$c/.ua)" ) &
-#		_timexit 20
+		( torsocks lynx -cfg=$TMP/$c/cfg -cmd_script=$DIR/task/trade "http://furiadetitas.net/trade/exchange" -useragent="$(shuf -n1 $TMP/$c/.ua)" ) &
+		_timexit 20
 		_fullarena
+		sleep 1s
 		pkill -sighup tor
 		reset; clear
 		echo "fullarena: $acc"
