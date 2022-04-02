@@ -3,7 +3,7 @@ Scripts macros para multi accs no furia, disponível apenas para o servidor Pt/B
 **Necessário level 10+ para gastar ouro na arena.**
 
 * Para conta principal use o twm(https://github.com/sharesourcecode/twm/blob/master/README.md)
->1 - Abra o app Termux(https://f-droid.org/repo/com.termux_117.apk) no Android e digite ou cole:
+>1 - Abra o app Termux(https://f-droid.org/repo/com.termux_118.apk) no Android e digite ou cole:
 ```bash
 apt install curl -y
 ```
