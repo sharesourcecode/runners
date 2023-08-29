@@ -1,0 +1,17 @@
+# Command logfile created by Lynx 2.8.9rel.1 (08 Jul 2018)
+# Arg0 = lynx
+# Arg1 = -cfg=/data/data/com.termux/files/home/runners/acc/cfg
+# Arg2 = -cmd_log=/data/data/com.termux/files/home/runners/task/trade
+# Arg3 = http://server_url/trade/exchange
+# Arg4 = -useragent=Mozilla/5.0 (Linux; Android 7.0; SM-G570M Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Mobile Safari/537.36
+key /
+key T
+key r
+key o
+key c
+key a
+key <space>
+key ^J
+key ^J
+key q
+key y
